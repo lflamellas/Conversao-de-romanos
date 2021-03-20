@@ -38,6 +38,6 @@ int roman_to_arabic(string str) {
 int validate_convert(string str) {
     int guess = roman_to_arabic(str);
     string str2 = arabic_to_roman(guess);
-    if(str == str2 && guess <= 3000) return guess;
+    if(str == str2 && guess <= 3000 && str.size() < 31) return guess;
     else return -1;
 }

@@ -49,7 +49,7 @@ TEST(ValidateConvertArabic, InvalidCases) {
     EXPECT_EQ(validate_convert("LL"), -1);
     EXPECT_EQ(validate_convert("XM"), -1);
     EXPECT_EQ(validate_convert("xiv"), -1);
-    EXPECT_EQ(validate_convert("ANA"), -1);
+    EXPECT_EQ(validate_convert("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"), -1);
 }
 
 } // namespace
