@@ -27,6 +27,7 @@ int roman_to_arabic(string str) {
     M.insert(pair<char, int> ('C', 100));
     M.insert(pair<char, int> ('D', 500));
     M.insert(pair<char, int> ('M', 1000));
+    if(str.size() > 30) return -1;
     int res = 0;
     for (int i = 0; i < str.size(); i++) {
         if(M[str[i]] < M[str[i+1]]) res -= M[str[i]];
@@ -38,6 +39,6 @@ int roman_to_arabic(string str) {
 int validate_convert(string str) {
     int guess = roman_to_arabic(str);
     string str2 = arabic_to_roman(guess);
-    if(str == str2 && guess <= 3000 && str.size() < 31) return guess;
+    if(str == str2 && guess <= 3000) return guess;
     else return -1;
 }
