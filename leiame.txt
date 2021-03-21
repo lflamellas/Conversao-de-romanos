@@ -12,12 +12,16 @@ Explorar os fundamentos do desenvolvimento orientado a testes com o auxílio da 
 - **TEST (RomantoArabic, ConvertBasicRoman)**:
 Verifica se a função *roman_to_arabic* converte as unidades básicas dos números romanos 
 [I, V, X, L, C, D, M].
+
 - **TEST (RomantoArabic, ConvertRoman)**:
 Verifica se a função *roman_to_arabic* converte números romanos mais complexos, mostrando que essa função funciona corretamente para números romanos válidos.
+
 - **TEST (ArabictoRoman, ConvertArabic)**:
 Verifica se a função *arabic_to_roman* converte números arábicos para romanos corretamente.
+
 - **TEST (ValidateConvertArabic, CorrectCases)**:
 Verifica se a função *validate_convert* valida e converte corretamente números romanos válidos.
+
 - **TEST (ValidateConvertArabic, InvalidCases)**:
 Verifica se a função *validate_convert* reconhece números romanos inválidos.
     - **"CCXCIVI"**: sequência inválida "**IVI**" detectada.
