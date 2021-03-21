@@ -6,7 +6,7 @@ using namespace std;
 
 string arabic_to_roman(int num) {
     string str2;
-    int romans[] = {1,4,5,9,10,40,50,90,100,400,500,900,1000};
+    int romans[] = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
     string symbol[] = {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"};
     int i = 12;    
     while (num > 0) {

@@ -1,12 +1,8 @@
-# Compilar:
-# g++ -lgtest -std=c++11 *.cpp *.hpp
-
-IDIR =../headers
+IDIR =./
 CC=g++
 CFLAGS=-I$(IDIR) -std=c++11
 
 ODIR=obj
-LDIR =../lib
 
 LIBS= -lm -lgtest -lgtest_main
 
