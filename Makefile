@@ -4,7 +4,7 @@ CFLAGS=-I$(IDIR) -std=c++11
 
 ODIR=obj
 
-LIBS= -lm -lgtest -lgtest_main
+LIBS= -lm -lgtest -lgtest_main -lpthread
 
 _DEPS = romano.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
