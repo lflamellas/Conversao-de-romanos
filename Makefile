@@ -19,10 +19,10 @@ $(ODIR)/%.o: %.cpp $(DEPS)
 test.out: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
-verify: main
+verify: test.out
 	valgrind --leak-check=full ./test.out
 	@echo "*** CPP CHECK ***"
-	cppcheck --enable=warning
+	cppcheck --enable=warning romano.cpp
 
 .PHONY: clean
 
