@@ -1,4 +1,4 @@
-# MP - Projeto 02
+# Conversão Romanos
 Resolver o problema de conversão de números romanos em números arábicos.
 Desenvolver em C++, dividindo o problema em módulos e testando o funcionamento da biblioteca.
 Explorar os fundamentos do desenvolvimento orientado a testes com o auxílio da ferramenta **googletest**.
